@@ -103,8 +103,8 @@ def signup2(request):
             numero = request.POST['numero']
             profe = request.POST['profesion']
 
-            if numero == '':
-                return render(request, 'users/signup1.html', {'error': 'llene todos los datos'})
+            if numero == '' and profe=='':
+                return render(request, 'users/signup2.html', {'error': 'llene todos los datos'})
 
             per.numero=numero
             tipo.profesion = profe
@@ -115,8 +115,8 @@ def signup2(request):
             numero = request.POST['numero']
             ima = request.POST['imagen']
 
-            if numero == '':
-                return render(request, 'users/signup1.html', {'error': 'llene todos los datos'})
+            if numero == '' and ima is not None:
+                return render(request, 'users/signup2.html', {'error': 'llene todos los datos'})
             per.numero=numero
             tipo.imagen=ima
             tipo.save()
