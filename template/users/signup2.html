@@ -23,7 +23,7 @@
 
 <p class="alert alert-danger">{{error}}</p>
 {% endif%}
-    <form method="POST" action="{% url 'signup2' %}">
+    <form method="POST" action="{% url 'signup2' %}" enctype="multipart/form-data">
 
         {% csrf_token %}
 
