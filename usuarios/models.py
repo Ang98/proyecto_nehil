@@ -2,7 +2,6 @@ from django.db import models
 
 # Create your models here.
 
-
 from django.contrib.auth.models import User
 
 
@@ -14,7 +13,7 @@ class perfil(models.Model):
 
 class profesor(models.Model):
     usuario = models.OneToOneField(User, on_delete=models.CASCADE)
-
+    curso= models.CharField(max_length=4,blank=True)
     profesion= models.CharField(max_length=20,blank=True)
 
 class alumno(models.Model):
