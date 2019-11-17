@@ -25,6 +25,9 @@
 {% endif%}
     <form method="POST" action="{% url 'signup2' %}" enctype="multipart/form-data">
 
+        {% if form.errors %}
+        <p class="alert- alert-danger">{{ form.errors }}</p>
+        {% endif %}
         {% csrf_token %}
 
              <!-- apellidos-->
@@ -37,15 +40,13 @@
             {% if request.user.perfil.tipo_usuario == 'ALUMNO' or request.user.perfil.tipo_usuario == 'alumno' %}
 
             <label >SELECCIONAR FOTO</label><br><br>
+        
+            <img src="{% static 'img/logo-test.png' %}" class="rounded-circle" height="50">
              <input type="file" name="imagen" required>
 
             {% endif %}
             <br>
 
-            <label >Numero</label>
-             <input type="number" placeholder="+9999" name="numero" required>
-
-            <br>
 
              <input type="submit" value="CONFIRMAR">
 

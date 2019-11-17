@@ -5,9 +5,13 @@ from django.contrib.auth import authenticate,login, logout
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render,redirect
 from django.contrib.auth.models import User
+from django.utils.datastructures import MultiValueDictKeyError
+
 
 from usuarios.models import perfil,alumno,profesor
 from django.db.utils import IntegrityError
+
+from usuarios.forms import perfilForm,alumnoForm,profesorForm
 
 def login_view(request):
 
@@ -63,6 +67,7 @@ def signup1(request):
         apellido = request.POST['last_name']
         correo = request.POST['correo']
         tipo= request.POST['select']
+        numero = request.POST['numero']
         if tipo == '':
 
             return render(request, 'users/signup1.html' , {'error': 'seleccione una categoria'})
@@ -80,6 +85,7 @@ def signup1(request):
 
             per = perfil.objects.get(usuario=usuario)
             per.tipo_usuario=tipo
+            per.numero= numero
             per.save()
 
             usuario.save()
@@ -97,31 +103,57 @@ def signup2(request):
 
     if request.method == 'POST':
         usuario = request.user
-        per = perfil.objects.get(usuario=usuario)
+
+
+
         if request.user.perfil.tipo_usuario == 'PROFESOR' or request.user.perfil.tipo_usuario == 'profesor':
-            tipo = profesor.objects.get(usuario=usuario)
-            numero = request.POST['numero']
-            profe = request.POST['profesion']
 
-            if numero == '' and profe=='':
-                return render(request, 'users/signup2.html', {'error': 'llene todos los datos'})
+            form = profesorForm(request.POST)
 
-            per.numero=numero
-            tipo.profesion = profe
-            tipo.save()
+            if form.is_valid() :
+                tipo = profesor.objects.get(usuario=usuario)
+                profe = request.POST['profesion']
+
+                if profe == '':
+                    return render(request, 'users/signup2.html', {'error': 'llene todos los datos'})
+
+                tipo.profesion = profe
+                tipo.save()
+            else:
+                form =alumnoForm()
+
+
 
         else:
-            tipo = alumno.objects.get(usuario=usuario)
-            numero = request.POST['numero']
-            ima = request.POST['imagen']
 
-            if numero == '' and ima is not None:
-                return render(request, 'users/signup2.html', {'error': 'llene todos los datos'})
-            per.numero=numero
-            tipo.imagen=ima
-            tipo.save()
+            form = alumnoForm(request.POST,request.FILES)
 
-        per.save()
+            if form.is_valid() :
+
+                data = form.cleaned_data
+
+                tipo = alumno.objects.get(usuario=usuario)
+                ima = data['imagen']
+
+                if ima is None:
+                    return render(request, 'users/signup2.html', {'error': 'llene todos los datos'})
+
+                tipo.imagen=ima
+                tipo.save()
+            else:
+                form =alumnoForm()
+
+
         return redirect('pagina')
 
-    return render(request,'users/signup2.html')
+    else:
+        if request.user.perfil.tipo_usuario == 'PROFESOR' or request.user.perfil.tipo_usuario == 'profesor':
+            form = profesorForm()
+        else:
+            form = alumnoForm()
+
+    return render(request,
+                  template_name='users/signup2.html',
+                  context={
+                      'form':form,
+                  })

@@ -22,7 +22,7 @@ class perfilCompletoMiddleware:
                 else:
                     if perfil.tipo_usuario.upper()=='ALUMNO':
                         alu = request.user.alumno
-                        if alu.imagen is None:
+                        if alu.imagen is None or alu.imagen=='':
                             if request.path not in [reverse('signup2'), reverse('logout')]:
                                 return redirect('signup2')
                     if perfil.tipo_usuario.upper() == 'PROFESOR':

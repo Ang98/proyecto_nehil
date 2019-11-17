@@ -1,7 +1,9 @@
 from django.contrib import admin
 from django.urls import path
-
+from django.conf import settings
 from django.contrib import admin
+from django.conf.urls.static import static
+
 
 from disenioNehil import views as local
 from posts import views as views_post
@@ -19,4 +21,4 @@ urlpatterns = [
     path('users/signup', users_view.signup, name='signup'),
     path('users/signup1', users_view.signup1, name='signup1'),
     path('users/signup2', users_view.signup2, name='signup2'),
-]
+] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

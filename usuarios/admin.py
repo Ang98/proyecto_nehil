@@ -9,7 +9,7 @@ class perfilAdmin(admin.ModelAdmin):
 
 @admin.register(alumno)
 class alumnoAdmin(admin.ModelAdmin):
-    list_display = ('pk','usuario',)
+    list_display = ('pk','usuario','imagen')
     list_display_links = ('pk','usuario')
 
 @admin.register(profesor)
