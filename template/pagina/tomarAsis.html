@@ -1,10 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "principalP.html" %}
 
-</body>
-</html>
+{% block head_content %}
+
+<title>TOMAR ASISTENCIA</title>
+
+{% endblock %}
+
+{% block referencias %}
+
+{% load static %}
+	<link rel="stylesheet" href="{% static 'css/styletomarAsistencia.css' %}">
+
+{% endblock %}
+
+
+{% block sidebar %}
+
+            <li><a href="perfilDocente.html">Perfil</a></li>
+			<li><a href="gestionarusuario.html">Gestionar Usuario</a></li>
+			<li><a href="{% url 'asistencia' id=numero %}">Tomar Asistencias</a></li>
+			<li><a href="{% url 'logout' %}">Cerrar Cesión</a></li>
+
+{% endblock %}
+
+
+{% block pantalla %}
+
+	<h1>Tomar Asistencias</h1><br><br>
+
+		<input type="submit" value="Tomar"><br><br><br><br>
+
+		<table>
+			<thead>
+				<tr>
+					<th>ALUMNO</th><th>FOTO</th><th>Estado de Asistencia</th>
+				</tr>
+			</thead>
+
+            {% for al in alumnos %}
+
+            <tr>
+				<td>{{al.alumno.usuario.username}}</td>
+                {% if al.alumno.imagen %}
+                <td><img src="{{al.alumno.imagen.url}}" class="d-inline-block align-top rounded-circle" height="60"></td>
+                {% else %}
+                <td><img src="{% static 'img/logo-test.png' %}" class="rounded-circle" height="50"></td>
+                {% endif %}
+
+                <td>
+                    <select class="form-control" id="exampleFormControlSelect1" name="select">
+                        <option value="">ASISTIO</option>
+                        <option value="">NO ASISTIO</option>
+                        <option value="">TARDANZA</option>
+                    </select>
+                </td>
+			</tr>
+
+            {% endfor %}
+
+
+
+		</table>
+
+{% endblock %}
+

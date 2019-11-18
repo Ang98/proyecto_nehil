@@ -2,24 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62129d5c-b914-48ac-8be3-c7f10b832fe4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/template/pagina/proIni.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/pagina/profesor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/pagina/tomarAsis.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/principalP.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/usuaraios/imagenes/e_PIWeCvI.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/pagina/cursosAlu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/disenioNehil/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/disenioNehil/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pagina/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/pagina/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pagina/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/pagina/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pagina/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pagina/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pagina/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pagina/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/pagina/principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/pagina/principal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuarios/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuarios/migrations/0002_alumno_profesor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuarios/migrations/0003_auto_20191102_0015.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuarios/migrations/0004_auto_20191102_2247.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuarios/migrations/0005_profesor_curso.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuarios/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/pagina/profesor.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/pagina/profesor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/pagina/tomarAsis.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/pagina/tomarAsis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/principalP.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/principalP.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,52 +21,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/posts/models.py">
+        <entry file="file://$PROJECT_DIR$/template/pagina/principal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="33" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="33" />
-              <folding>
-                <element signature="e#27#55#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/disenioNehil/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="88" selection-start-line="27" selection-start-column="88" selection-end-line="27" selection-end-column="88" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/users/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="23" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="11" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/template/principalP.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/pagina/tomarAsis.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -84,7 +42,58 @@
         <entry file="file://$PROJECT_DIR$/template/pagina/proIni.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="527">
-              <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+              <caret line="31" column="76" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/pagina/tomarAsis.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/pagina/profesor.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/template/pagina/cursosAlu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/disenioNehil/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pagina/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="54" column="26" lean-forward="true" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,30 +105,6 @@
               <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pagina/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pagina/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,17 +147,18 @@
         <option value="$PROJECT_DIR$/usuarios/models.py" />
         <option value="$PROJECT_DIR$/template/base.html" />
         <option value="$PROJECT_DIR$/template/pagina/proIni.html" />
-        <option value="$PROJECT_DIR$/template/pagina/principal.html" />
         <option value="$PROJECT_DIR$/template/users/signup.html" />
         <option value="$PROJECT_DIR$/disenioNehil/views.py" />
-        <option value="$PROJECT_DIR$/pagina/views.py" />
-        <option value="$PROJECT_DIR$/template/principalP.html" />
-        <option value="$PROJECT_DIR$/template/pagina/profesor.html" />
-        <option value="$PROJECT_DIR$/template/pagina/tomarAsis.html" />
-        <option value="$PROJECT_DIR$/disenioNehil/urls.py" />
         <option value="$PROJECT_DIR$/pagina/models.py" />
         <option value="$PROJECT_DIR$/pagina/admin.py" />
         <option value="$PROJECT_DIR$/pagina/migrations/0001_initial.py" />
+        <option value="$PROJECT_DIR$/template/pagina/profesor.html" />
+        <option value="$PROJECT_DIR$/template/pagina/tomarAsis.html" />
+        <option value="$PROJECT_DIR$/template/pagina/principal.html" />
+        <option value="$PROJECT_DIR$/disenioNehil/urls.py" />
+        <option value="$PROJECT_DIR$/pagina/views.py" />
+        <option value="$PROJECT_DIR$/template/pagina/cursosAlu.html" />
+        <option value="$PROJECT_DIR$/template/principalP.html" />
       </list>
     </option>
   </component>
@@ -230,13 +216,13 @@
             <path>
               <item name="disenioNehil" type="b2602c69:ProjectViewProjectNode" />
               <item name="disenioNehil" type="462c0819:PsiDirectoryNode" />
-              <item name="usuarios" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="disenioNehil" type="b2602c69:ProjectViewProjectNode" />
               <item name="disenioNehil" type="462c0819:PsiDirectoryNode" />
               <item name="usuarios" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="disenioNehil" type="b2602c69:ProjectViewProjectNode" />
@@ -354,11 +340,19 @@
       <option name="project" value="LOCAL" />
       <updated>1573956971150</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="cambios angel 5.0">
+      <created>1574036998925</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1574036998926</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13738441" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -386,7 +380,8 @@
     <MESSAGE value="cambios angel 2.0" />
     <MESSAGE value="cambios angel 3.0" />
     <MESSAGE value="cambios angel 4.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="cambios angel 4.0" />
+    <MESSAGE value="cambios angel 5.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambios angel 5.0" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/manage.py">
@@ -470,20 +465,6 @@
     <entry file="file://$PROJECT_DIR$/pagina/migrations/0002_clase_seccion.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/users/signup2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/pagina/principal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/users/login1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -518,40 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/users/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/users/signup1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/disenioNehil/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="88" selection-start-line="27" selection-start-column="88" selection-end-line="27" selection-end-column="88" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usuarios/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/posts/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -579,12 +526,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/template/users/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pagina/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/users/signup1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/users/signup2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="43" column="91" lean-forward="true" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usuarios/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -599,41 +577,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/disenioNehil/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pagina/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+        <state relative-caret-position="234">
+          <caret line="54" column="26" lean-forward="true" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/pagina/profesor.html">
+    <entry file="file://$PROJECT_DIR$/template/principalP.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/pagina/proIni.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
-          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+          <caret line="31" column="76" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/pagina/tomarAsis.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/principalP.html">
+    <entry file="file://$PROJECT_DIR$/template/pagina/profesor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/pagina/principal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/pagina/cursosAlu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
         </state>
       </provider>
     </entry>

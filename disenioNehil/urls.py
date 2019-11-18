@@ -23,8 +23,14 @@ urlpatterns = [
     path('users/signup2', users_view.signup2, name='signup2'),
 
     path('pagina/', pagina_view.principal, name='pagina'),
+
+
     path('pagina/alumno', pagina_view.principal, name='alumno'),
+    path('pagina/alumno/cursos', pagina_view.cursoAlu, name='cursoAlu'),
+
+
     path('pagina/profesor/<int:id>', pagina_view.profe, name='profe'),
-    path('pagina/profesor/tomarAsistencia/<int:id>', pagina_view.profe, name='asistencia'),
+    path('pagina/profesor/tomarAsistencia/<int:id>', pagina_view.asistencia, name='asistencia'),
     path('pagina/profesor/curso', pagina_view.cursoReq, name='curso'),
+
 ] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

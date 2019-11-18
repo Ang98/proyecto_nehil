@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect
 from django.contrib.auth.decorators import login_required
 from usuarios.models import profesor
-from pagina.models import seccion,curso
+from pagina.models import seccion,curso,clase,periodo
 # Create your views here.
 @login_required()
 def principal(request):
@@ -41,4 +41,34 @@ def profe(request,id):
                   context={
                   'curso':sec.curso,
                   'profe':request.user,
+                  'numero':id,
     })
+
+
+
+def asistencia(request,id):
+    sec = seccion.objects.get(pk=id)
+    alumnos=list(clase.objects.filter(secc=sec))
+
+
+    return render(request,
+                  'pagina/tomarAsis.html',
+                  context={
+                      'alumnos':alumnos,
+                      'numero': id,
+                  }
+                  )
+
+def cursoAlu(request):
+
+    cur= list(clase.objects.filter(alumno=request.user.alumno))
+
+
+
+
+    return render(request,
+                  'pagina/cursosAlu.html',
+                  context={
+                      'cursos': cur,
+                      }
+                  )

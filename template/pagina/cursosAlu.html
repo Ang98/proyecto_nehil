@@ -1,0 +1,55 @@
+{% extends "principalP.html" %}
+
+{% block head_content %}
+
+<title>CURSOS</title>
+
+{% endblock %}
+
+{% block referencias %}
+
+{% load static %}
+	<link rel="stylesheet" href="{% static 'css/styletomarAsistencia.css' %}">
+
+{% endblock %}
+
+
+{% block sidebar %}
+
+            <li><a href="perfilDocente.html">Perfil</a></li>
+			<li><a href="{% url 'cursoAlu' %}">Historial de Asistencias</a></li>
+			<li><a href="{% url 'logout' %}">Cerrar Cesión</a></li>
+
+{% endblock %}
+
+
+{% block pantalla %}
+
+	<h1>Cursos en el presete periodo</h1><br><br>
+
+		<input type="submit" value="Tomar"><br><br><br><br>
+
+		<table>
+			<thead>
+				<tr>
+					<th>CURSO</th><th>PROFESOR</th>
+				</tr>
+			</thead>
+
+            {% for c in cursos %}
+
+            <tr>
+				<td>{{c.secc.curso.title}}</td>
+
+                <td>{{c.secc.profesor.usuario.last_name}},{{c.secc.profesor.usuario.first_name}}</td>
+
+
+            </tr>
+
+            {% endfor %}
+
+
+
+		</table>
+
+{% endblock %}

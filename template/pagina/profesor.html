@@ -11,13 +11,13 @@
 {% load static %}
 	<link rel="stylesheet" href="{% static 'css/styleperfilD.css' %}">
 
-{% endblock %}}
+{% endblock %}
 
 {% block sidebar %}
 
             <li><a href="perfilDocente.html">Perfil</a></li>
 			<li><a href="gestionarusuario.html">Gestionar Usuario</a></li>
-			<li><a href="tomarAsistencia.html">Tomar Asistencias</a></li>
+			<li><a href="{% url 'asistencia' id=numero %}">Tomar Asistencias</a></li>
 			<li><a href="{% url 'logout' %}">Cerrar Cesión</a></li>
 
 {% endblock %}
@@ -27,7 +27,7 @@
 
 	<form>
 
-			<h1>Perfil de Docente : {{profe.username}},{{curso.title}} </h1><br><br><br>
+			<h1>Perfil de Docente : {{profe.username.upper}} , {{curso.title.upper}} </h1><br><br><br>
 
             <label for="apellidos">Apellidos </label>
             <input type="text" placeholder="{{profe.last_name}}" readonly>
