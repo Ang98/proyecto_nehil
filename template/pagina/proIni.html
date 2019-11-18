@@ -1,0 +1,53 @@
+{% extends "users/base.html" %}
+
+
+
+{% block head_content%}
+<title>CURSOS</title>
+{% endblock %}
+
+{% block referencias %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styleregis2.css' %}">
+{% endblock %}
+
+{% block container %}
+<h1>Usuario:<p name="usuario"> ( {{ request.user.username }} )</p> </h1><br><br>
+
+
+{% if error%}
+
+<p class="alert alert-danger">{{error}}</p>
+{% endif%}
+    <form method="POST" action="{% url 'curso' %}">
+
+        {% csrf_token %}
+
+
+             <label >SELECCIONE UN CURSO:</label><br>
+             <select class="form-control" id="exampleFormControlSelect1" name="select">
+
+                 {% for c in cursos %}
+
+                 <option value="{{c.curso.pk}}">{{ c.curso.title }}</option>
+
+                 {% endfor %}
+
+
+            </select>
+            <br>
+
+             <!-- boton user/admin-->
+             <input type="submit" value="CONFIRMAR">
+
+
+			 <!-- boton user/admin-->
+            <a class="btn btn-dark" href="{% url 'logout' %}" role="button">CANCELAR</a>
+
+
+    </form>
+
+{% endblock %}
+
+
+
